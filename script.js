@@ -1,6 +1,5 @@
 (function () {
   async function playAudio (url, playButton) {
-    console.log('Play no áudio: ' + url)
     await new Audio(url).play()
     playButton.classList.replace('fa-spinner', 'fa-play')
     playButton.classList.remove('fa-spin')
@@ -10,7 +9,6 @@
 
   function loop (playButton, counter = 0) {
     file = document.getElementById("downloadFile")
-    console.log(counter)
     if (counter >= 10) {
       loadButtons()
       return
@@ -36,7 +34,6 @@
 
   function addPlayButton(event) {
     e = event.target
-    console.log(event)
     e.classList.replace('fa-play', 'fa-spinner')
     e.classList.add('fa-spin')
 
