@@ -1,0 +1,31 @@
+{
+    "name": "Play freshchat audio",
+    "version": "1.0",
+    "description": "Essa é uma extensão [não oficial] para ouvir áudio enviado para o freshchat",
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "permissions": [
+      "tabs",
+      "http://*.freshchat.com/*",
+      "https://*.freshchat.com/*",
+      "declarativeContent"
+    ],
+    "browser_action": {},
+    "content_scripts": [
+      {
+        "js": ["script.js"],
+        "matches": [
+          "http://*.freshchat.com/*",
+          "https://*.freshchat.com/*"
+        ]
+      }
+    ],
+    "manifest_version": 2
+}
