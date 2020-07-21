@@ -12,10 +12,8 @@
       "128": "icon128.png"
     },
     "permissions": [
-      "tabs",
       "http://*.freshchat.com/*",
-      "https://*.freshchat.com/*",
-      "declarativeContent"
+      "https://*.freshchat.com/*"
     ],
     "browser_action": {},
     "content_scripts": [
