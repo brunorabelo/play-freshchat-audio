@@ -1,7 +1,7 @@
 {
     "name": "Play freshchat audio",
     "version": "1.0",
-    "description": "Essa é uma extensão [não oficial] para ouvir áudio enviado para o freshchat",
+    "description": "Essa é uma extensão [não oficial] que permite baixar os áudios recebidos na plataforma do freshchat e ouví-los diretamente no navegador.",
     "background": {
       "scripts": ["background.js"],
       "persistent": false
