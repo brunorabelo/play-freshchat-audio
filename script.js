@@ -23,12 +23,10 @@
     }
 
     if (!file || !file.src) {
-      console.log('counter ' + counter)
       setTimeout(() => {
         loop(counter)
       }, 500);
       counter++
-      console.log('----------')
       return
     }
 
